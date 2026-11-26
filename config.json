@@ -1,0 +1,22 @@
+{
+  "seed": 42,
+  "task": "ml",
+  "data": {"train_path": "train.csv", "test_path": "test.csv", "target": "SalePrice", "id_column": "Id"},
+  "validation": {"n_splits": 5},
+  "output_dir": "outputs",
+  "ml": {
+    "selected_models": ["catboost"],
+    "models": {
+      "catboost": {"iterations": 500, "depth": 5, "learning_rate": 0.17254716573280354, "l2_leaf_reg": 5.395030966670228, "verbose": false, "allow_writing_files": false},
+      "ridge": {"alpha": 10},
+      "lasso": {"alpha": 0.0005, "max_iter": 10000},
+      "elasticnet": {"alpha": 0.001, "l1_ratio": 0.5, "max_iter": 10000},
+      "svr": {"C": 1, "epsilon": 0.01},
+      "knn": {"n_neighbors": 10, "weights": "distance"},
+      "decision_tree": {"max_depth": 5},
+      "random_forest": {"n_estimators": 200, "n_jobs": -1},
+      "gradient_boosting": {"n_estimators": 300, "learning_rate": 0.1, "max_depth": 3}
+    }
+  },
+  "dl": {"hidden_sizes": [64, 32], "epochs": 100, "batch_size": 32, "learning_rate": 0.001, "num_threads": 1}
+}

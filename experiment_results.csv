@@ -1,0 +1,19 @@
+﻿Модель;Обработка категорий;alpha;Средний RMSE
+Ridge;Самое частое значение;10.0;0.146785
+Ridge;Отдельная категория Missing;10.0;0.146842
+DecisionTree;Отдельная категория Missing;;0.197309
+RandomForest;Отдельная категория Missing;;0.144455
+CatBoost;Категории CatBoost, пропуски Missing;;0.131932
+CatBoost (GridSearch);Категории CatBoost, пропуски Missing;;0.127654
+Lasso;Отдельная категория Missing;0.001;0.144707
+Lasso (GridSearch);Отдельная категория Missing;0.0005;0.141632
+ElasticNet;Отдельная категория Missing;0.001;0.143687
+SVR;Отдельная категория Missing;;0.143579
+SVR (GridSearch);Отдельная категория Missing;;0.137796
+KNN;Отдельная категория Missing;;0.176467
+KNN (GridSearch);Отдельная категория Missing;;0.172004
+CatBoost (Optuna);Категории CatBoost, пропуски Missing;;0.127192
+GradientBoosting;Отдельная категория Missing;;0.13341
+GradientBoosting (GridSearch);Отдельная категория Missing;;0.130787
+PyTorch MLP (1 фолд, early stopping);Отдельная категория Missing;;0.1295
+PyTorch MLP (5 фолдов, 100 эпох);Отдельная категория Missing;;0.1860271692276001
